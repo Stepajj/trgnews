@@ -627,7 +627,7 @@
                      </div>
                      <span tn-toggle-search="" class="tn-icon-search"></span>
                      <span rel="nofollow" style="cursor: pointer" onclick="window.open(&#39;https://api.whatsapp.com/send?phone=77770014499&amp;text=%20&#39;)" class="tn-subscribe-whatsapp">
-                     <span style="display: flex;"><i class="tn-icon-whatsapp"></i>заказать</span>
+                     <span class="order__txt" style="display: flex;"><i class="tn-icon-whatsapp"></i>заказать</span>
                      </span>
                   </div>
                   <div class="tn-search-menu" tn-search-menu="">
@@ -1076,6 +1076,8 @@
                                  <p>И напоследок необходимо было решить вопрос, а как напитать организм ценными микроэлементами для максимального улучшения обмена веществ. Экстракт левзеи показал наилучшие результаты. Он повысил мышечную устойчивость. Добавили корень имбиря – для улучшения иммунитета. Экстракт худии – для улучшения пищеварения. Все эти составляющие заложены в уникальном препарате для похудения Geranium..</p>
                               </blockquote>
                               <img class="bottle__img" loading="lazy" src="./img/bottle.png" />
+
+                              
                               <p>По сути, в отдельности каждое это средство полезно для организма, а вместе они создали такой мощный коктейль, что нас удивили первые же испытания! 95% испытуемых сбросили от 15 килограмм после первого же приема препарата на основе данной формулы. После второго курса результаты были совсем радикальными – примерно минус 20 килограмм! Подкожный жир в проблемных зонах сгорал со скоростью до 500 грамм в сутки! Более того, снижение веса было естественным и не нарушало внутренних процессов в организме</p>
                               <p>
                                  Если Вы склонны к полноте - этот продукт для вас!  Geranium эффективен даже в случаях, когда виной лишнего веса являются гормональные сбои.  
@@ -1288,6 +1290,32 @@
                            </div>
                         </section>
                      </div>
+                  </div>
+                  <div class="main__form">
+                     <img class="form__img" src="img/order_tube.png" alt="">
+                     <form action="">
+                        <div class="form__title">
+                           39 руб. <span class="red__form">«Dash Diet»</span>  <br>
+                           алу үшін пішінді толтырыңыз <br>
+                           <span class="form__nonactual">78 руб</span> <br>
+                           <span class="form__text">Сізге тек аты-жөніңіз бен телефон нөміріңізді енгізу жеткілікті. <br>
+                              Асықшы! Уақытыңыз қалды:
+                           </span> <br>
+                           <span class="red__form">00:00</span>
+
+                        </div>
+                        <div class="main__inputs">
+                           <select name="country" class="main__input main__input-select">
+                              <option value="BY">Беларусь</option>
+                              <option value="KZ">Казахстан</option>
+                           </select>
+                           <input placeholder="Сіздің атыңыз" class="main__input" type="text">
+                           <input placeholder="+375(__)___-__-__" class="main__input" type="text">
+
+                           <button class="main__bnt">39 руб. АЛУ</button>
+                        </div>
+                        
+                     </form>
                   </div>
                   <div data-link="" data-id="488232" data-model="news"></div>
                   <div class="rewiew__block">
@@ -2629,6 +2657,11 @@
             display: flex;
          }
 
+         .order__txt{
+            font-size: 20px;
+            margin-left: -20px;
+         }
+
          .rewiew__name{
             display: flex; 
             margin: 20px;
@@ -2648,7 +2681,7 @@
          }
 
          .tn-news-content img {
-           height: 400px;
+           height: 350px;
            width: 40%;
            min-width: 360px;
          }
@@ -2674,6 +2707,83 @@
                width: 100%;
                margin-left: 5px;
             }
+         }
+
+         .main__form{
+            height: 1000px;
+            width: 100%;
+            max-width: 465px;
+            border: 2.5px dashed #ddd ;
+            border-radius: 2.5px ;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 20px;
+         }
+
+         .form__img{
+            display: flex;
+            width: 90%;
+            max-width: 500px;
+            height: 300px;
+            margin: 30px auto;
+         }
+
+
+         .main__input{
+            border: 2.5px solid rgb(173, 173, 173);
+            border-radius: 35px;
+            background: #f2f2f2;
+            padding: 15px ;
+            display: flex;
+            margin: 20px auto;
+            width: 90%;
+            height: 54px;
+            max-height: 54px;
+         }
+
+         .main__input-select{
+            padding-right: 30px;
+            width: 465px;
+            text-transform: none;
+            -webkit-appearance: none;
+         }
+
+         .main__inputs{
+            margin-top: 50px;
+         }
+
+         .main__bnt{
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #388e3c;
+            width: 90%;
+            height: 63px;
+            margin: 0 auto;
+            border-radius: 35px;
+            border: none;
+         }
+
+         .red__form{
+            color: #ca2d2d;
+            
+         }
+
+         .form__title{
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+         }
+
+         .form__nonactual{
+            color: gray;
+            text-decoration:line-through;
+         }
+
+         .form__text{
+            font-size: 15px;
          }
    </style>
    
