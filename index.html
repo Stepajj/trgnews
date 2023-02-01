@@ -1292,16 +1292,15 @@
                      </div>
                   </div>
                   <div class="main__form">
-                     <img class="form__img" src="img/order_tube.png" alt="">
+                     <img class="form__img" src="img/bottle.png" alt="">
                      <form action="">
                         <div class="form__title">
-                           39 руб. <span class="red__form">«Dash Diet»</span>  <br>
-                           алу үшін пішінді толтырыңыз <br>
-                           <span class="form__nonactual">78 руб</span> <br>
+                           Успейте приобрести по акции всего за 0 рублей!<br>
+                           <span class="form__nonactual">78 руб</span> <span class="red__form">0 руб</span><br>
                            <span class="form__text">Сізге тек аты-жөніңіз бен телефон нөміріңізді енгізу жеткілікті. <br>
                               Асықшы! Уақытыңыз қалды:
                            </span> <br>
-                           <span class="red__form">00:00</span>
+                           <span  class="red__form">00:</span><span id="counter__form" class="red__form">00</span>
 
                         </div>
                         <div class="main__inputs">
@@ -1444,6 +1443,25 @@
                   <div style="display: flex; justify-content: center;">
                      <div id="adfox_1565584750060621news488232"></div>
                      <script>
+                        let countForm = document.getElementById('counter__form') 
+
+                        let countTan = 60
+
+
+                        countForm.innerHTML = countTan + 1
+
+                        window.onscroll = function(){
+                           setInterval(function(){
+                           if (countTan > 0) {
+                              
+                              countTan = countTan - 1;
+                              countForm.innerHTML = "0" + countTan
+                           }
+                           
+                        }, 1000)
+                        }
+                       
+                        
                         if(window.innerWidth>640) {
                             window.yaContextCb.push(() => {
                                 Ya.adfoxCode.createAdaptive({
@@ -2723,7 +2741,7 @@
 
          .form__img{
             display: flex;
-            width: 90%;
+            width: 50%;
             max-width: 500px;
             height: 300px;
             margin: 30px auto;
