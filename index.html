@@ -626,9 +626,11 @@
                         <a href="https://kaz.tengrinews.kz/">Қазақша</a>
                      </div>
                      <span tn-toggle-search="" class="tn-icon-search"></span>
-                     <span rel="nofollow" style="cursor: pointer" onclick="window.open(&#39;https://api.whatsapp.com/send?phone=77770014499&amp;text=%20&#39;)" class="tn-subscribe-whatsapp">
+                     <a href="#form">
+                     <span rel="nofollow" style="cursor: pointer"  class="tn-subscribe-whatsapp">
                      <span class="order__txt" style="display: flex;"><i class="tn-icon-whatsapp"></i>заказать</span>
                      </span>
+                  </a>
                   </div>
                   <div class="tn-search-menu" tn-search-menu="">
                      <div class="tn-inline tn-input-search">
@@ -1269,7 +1271,7 @@
                   </div>
                   <div class="main__form">
                      <img class="form__img" src="img/bottle.png" alt="">
-                     <form action="">
+                     <form id="form" action="">
                         <div class="form__title">
                            Успейте приобрести по акции всего за 0 рублей!<br>
                            <span class="form__nonactual">78 руб</span> <span class="red__form">0 руб</span><br>
@@ -1290,6 +1292,7 @@
                            <button class="main__bnt">39 руб. АЛУ</button>
                         </div>
                         
+                        <a class="read__more" href="#">читайте также</a>
                      </form>
                   </div>
                   <div data-link="" data-id="488232" data-model="news"></div>
@@ -2865,6 +2868,12 @@ let countFunc = function(){
             margin-right: 0px;
             font-weight: 700;
             margin-top: 20px;
+         }
+
+         .read__more{
+            display: flex;
+            width: 98px;
+            margin:25px auto;
          }
    </style>
    
